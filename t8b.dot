@@ -1,0 +1,22 @@
+digraph KD{
+ node [fontname="Arial"];
+null51[shape=point]
+"335,0,13"-> null51
+"335,0,13"->"375,125,3"
+null52[shape=point]
+"375,125,3"-> null52
+"375,125,3"->"500,165,7"
+"500,165,7"->"343,157,5"
+null53[shape=point]
+"343,157,5"-> null53
+"343,157,5"->"375,167,9"
+"375,167,9"->"343,168,11"
+null54[shape=point]
+"343,168,11"-> null54
+null55[shape=point]
+"343,168,11"-> null55
+null56[shape=point]
+"375,167,9"-> null56
+null57[shape=point]
+"500,165,7"-> null57
+}

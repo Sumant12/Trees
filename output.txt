@@ -1,0 +1,379 @@
+*******TestCase1*******
+
+InOrder Traversal of BST after Data Insertion: 
+
+[0 0]  [1000 1]  [500 2]  [750 3]  [625 4]  [687 5]  [656 6]  [671 7]  [663 8]  [667 9]  [665 10]  [665 12]  [665 13]  [665 14]  [665 15]  [666 11]  
+
+t1.dot file is generated
+
+*******TestCase2*******
+
+InOrder Traversal of KD after Data Insertion: 
+
+[0  500   0]  [500  0   1]  [250  250   2]  [375  125   3]  [312  188   4]  [343  157   5]  [327  173   6]  [335  165   7]  [331  169   8]  [333  167   9]  [332  168   10]  [332  168   11]  [332  168   12]  [332  168   13]  [332  168   14]  [332  168   15]  
+
+t2.dot file is generated
+
+
+*******TestCase3*******
+
+Generating a list of 200 data items and Inserting data with distinct keys
+
+-------------------------------------------------------------------------
+n = No. of Nodes in the tree 	 Height of BST T3 	 lg n 	 	√n 
+-------------------------------------------------------------------------
+0									-1				-inf		0
+20									8				2.99573		4.47214
+40									11				3.68888		6.32456
+60									13				4.09434		7.74597
+80									16				4.38203		8.94427
+100									17				4.60517		10
+120									17				4.78749		10.9545
+140									18				4.94164		11.8322
+160									18				5.07517		12.6491
+180									19				5.19296		13.4164
+200									19				5.29832		14.1421
+-------------------------------------------------------------------------
+
+
+*******TestCase4*******
+
+Generating a list of 200 data items and Inserting data with distinct keys
+
+-------------------------------------------------------------------------
+n = No. of Nodes in the tree 	 Height of BST T4 	 lg n 	 	√n 
+-------------------------------------------------------------------------
+0									-1				-inf		0
+20									7				2.99573		4.47214
+40									8				3.68888		6.32456
+60									10				4.09434		7.74597
+80									11				4.38203		8.94427
+100									12				4.60517		10
+120									13				4.78749		10.9545
+140									13				4.94164		11.8322
+160									14				5.07517		12.6491
+180									15				5.19296		13.4164
+200									15				5.29832		14.1421
+-------------------------------------------------------------------------
+*******TestCase5*******
+
+Inserting 10 elements chosen using Reservior Technique from List 1 randomly to the search tree
+
+Inorder Traversal before deletion of root Node in BST
+
+[0 0]  [665 14]  [500 2]  [625 4]  [656 6]  [665 15]  [663 8]  [665 12]  [750 3]  [687 5]  
+5a.dot file is generated
+
+Deleting thr root element
+
+Inorder Traversal After deletion of root Node in BST
+
+[665 14]  [500 2]  [625 4]  [656 6]  [665 15]  [663 8]  [665 12]  [750 3]  [687 5]  
+5b.dot file is generated
+
+*******TestCase6*******
+
+Inserting 10 elements chosen using Reservior Technique from List 1 randomly to the KD tree
+
+Inorder Traversal before deletion of root Node in KD Tree
+[0  500   0]  [332  168   14]  [375  125   3]  [343  157   5]  [332  168   15]  [332  168   12]  [250  250   2]  [312  188   4]  [327  173   6]  [331  169   8]  
+
+6a.dot is created
+
+Inorder Traversal After deletion of root Node in KD Tree
+[332  168   12]  [332  168   14]  [375  125   3]  [343  157   5]  [332  168   15]  [250  250   2]  [312  188   4]  [327  173   6]  [331  169   8]  
+
+6b.dot is created
+
+
+TestCase7
+*******TestCase7*******
+
+Data Inserted into BST is
+
+[1000 1]  [500 2]  [500 12]  [750 3]  [625 4]  [625 14]  [687 5]  [656 6]  [656 16]  [671 7]  [663 8]  [663 18]  [667 9]  [665 10]  [665 20]  [667 19]  [671 17]  [687 15]  [750 13]  [1000 11]  
+----------------------------------------------------------------------------------
+stage   data item at root    the root (after deletion)     search for data with key
+--------------------------------------------------------------------------------
+0             [1000,1]             [500,2]                 [1000,11]
+1             [500,2]             [625,14]                 [500,12]
+2             [625,14]             [625,4]                 [625,4]
+3             [625,4]             [656,16]                    Nill
+4             [656,16]             [656,6]                 [656,6]
+5             [656,6]             [663,18]                    Nill
+6             [663,18]             [663,8]                 [663,8]
+7             [663,8]             [665,20]                    Nill
+8             [665,20]             [665,10]                 [665,10]
+9             [665,10]             [667,19]                    Nill
+10             [667,19]             [667,9]                 [667,9]
+11             [667,9]             [671,17]                    Nill
+12             [671,17]             [671,7]                 [671,7]
+13             [671,7]             [687,15]                    Nill
+14             [687,15]             [687,5]                 [687,5]
+15             [687,5]             [750,13]                    Nill
+16             [750,13]             [750,3]                 [750,3]
+17             [750,3]             [1000,11]                    Nill
+18             [1000,11]             [500,12]                    Nill
+19             [500,12]                Nill                    Nill
+*******TestCase8*******
+
+Data Inserted for TestCase8 into KD Tress is
+
+[500  0   1]  [250  250   2]  [375  125   3]  [312  188   4]  [343  157   5]  [327  173   6]  [250  169   8]  [312  168   10]  [343  168   11]  [327  168   12]  [335  0   13]  [333  125   15]  [332  157   17]  [332  173   18]  [332  188   16]  [375  167   9]  [331  250   14]  [500  165   7]  
+
+Value of i is 1
+The root before deletion of root node is:
+[500 0 1]
+
+Deleting the root node
+The root after deletion of root node is:
+[250 169 8]
+
+Node to be searched is:
+[500 0 1]
+
+The Node is not found
+
+**********************
+Value of i is 2
+The root before deletion of root node is:
+[250 169 8]
+
+Deleting the root node
+The root after deletion of root node is:
+[250 250 2]
+
+Node to be searched is:
+[250 250 2]
+
+Node Found: 
+[250 250 2]
+**********************
+Value of i is 3
+The root before deletion of root node is:
+[250 250 2]
+
+Deleting the root node
+The root after deletion of root node is:
+[312 168 10]
+
+Node to be searched is:
+[375 125 3]
+
+Node Found: 
+[375 125 3]
+**********************
+Value of i is 4
+The root before deletion of root node is:
+[312 168 10]
+
+Deleting the root node
+The root after deletion of root node is:
+[312 188 4]
+
+Node to be searched is:
+[312 188 4]
+
+Node Found: 
+[312 188 4]
+**********************
+Value of i is 5
+The root before deletion of root node is:
+[312 188 4]
+
+Deleting the root node
+The root after deletion of root node is:
+[327 168 12]
+
+Node to be searched is:
+[343 157 5]
+
+Node Found: 
+[343 157 5]
+**********************
+Value of i is 6
+The root before deletion of root node is:
+[327 168 12]
+
+Deleting the root node
+The root after deletion of root node is:
+[327 173 6]
+
+Node to be searched is:
+[327 173 6]
+
+Node Found: 
+[327 173 6]
+**********************
+
+t8a.dot is generated
+
+Value of i is 7
+The root before deletion of root node is:
+[327 173 6]
+
+Deleting the root node
+The root after deletion of root node is:
+[331 250 14]
+
+Node to be searched is:
+[500 165 7]
+
+Node Found: 
+[500 165 7]
+**********************
+Value of i is 8
+The root before deletion of root node is:
+[331 250 14]
+
+Deleting the root node
+The root after deletion of root node is:
+[332 157 17]
+
+Node to be searched is:
+[250 169 8]
+
+The Node is not found
+
+**********************
+Value of i is 9
+The root before deletion of root node is:
+[332 157 17]
+
+Deleting the root node
+The root after deletion of root node is:
+[332 173 18]
+
+Node to be searched is:
+[375 167 9]
+
+Node Found: 
+[375 167 9]
+**********************
+Value of i is 10
+The root before deletion of root node is:
+[332 173 18]
+
+Deleting the root node
+The root after deletion of root node is:
+[332 188 16]
+
+Node to be searched is:
+[312 168 10]
+
+The Node is not found
+
+**********************
+Value of i is 11
+The root before deletion of root node is:
+[332 188 16]
+
+Deleting the root node
+The root after deletion of root node is:
+[333 125 15]
+
+Node to be searched is:
+[343 168 11]
+
+Node Found: 
+[343 168 11]
+**********************
+Value of i is 12
+The root before deletion of root node is:
+[333 125 15]
+
+Deleting the root node
+The root after deletion of root node is:
+[335 0 13]
+
+Node to be searched is:
+[327 168 12]
+
+The Node is not found
+
+**********************
+
+t8b.dot is generated
+
+Value of i is 13
+The root before deletion of root node is:
+[335 0 13]
+
+Deleting the root node
+The root after deletion of root node is:
+[343 168 11]
+
+Node to be searched is:
+[335 0 13]
+
+The Node is not found
+
+**********************
+Value of i is 14
+The root before deletion of root node is:
+[343 168 11]
+
+Deleting the root node
+The root after deletion of root node is:
+[343 157 5]
+
+Node to be searched is:
+[331 250 14]
+
+The Node is not found
+
+**********************
+Value of i is 15
+The root before deletion of root node is:
+[343 157 5]
+
+Deleting the root node
+The root after deletion of root node is:
+[375 167 9]
+
+Node to be searched is:
+[333 125 15]
+
+The Node is not found
+
+**********************
+Value of i is 16
+The root before deletion of root node is:
+[375 167 9]
+
+Deleting the root node
+The root after deletion of root node is:
+[375 125 3]
+
+Node to be searched is:
+[332 188 16]
+
+The Node is not found
+
+**********************
+Value of i is 17
+The root before deletion of root node is:
+[375 125 3]
+
+Deleting the root node
+The root after deletion of root node is:
+[500 165 7]
+
+Node to be searched is:
+[332 157 17]
+
+The Node is not found
+
+**********************
+Value of i is 18
+The root before deletion of root node is:
+[500 165 7]
+
+Deleting the root node
+The root after deletion of root node is:
+Node to be searched is:
+[332 173 18]
+
+The Node is not found
+
+**********************
